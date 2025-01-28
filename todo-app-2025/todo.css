@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    background: #c2c2c2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todo_container{
+    border: 2px solid black;
+    width: 25vw;
+    min-height: 50vh;
+}
+.heading{
+    font-size: large;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    padding: 20px;
+}
+.input_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.input_container button{
+    padding: 3px 6px;
+    cursor: pointer;
+}
+.input_container input{
+    outline: none;
+    padding: 3px;
+    width: 15vw;
+}
+.list_item_container{
+    display: grid;
+    place-items: center;
+    margin-top: 30px;
+}
+.list_item{
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+.btn button{
+    margin-top: 3px;
+    padding: 3px 6px;
+    cursor: pointer;
+}
+.list_item li{
+    list-style-type: none;
+    font-size: 18px;
+    padding: 3px;
+    border: 2px solid green;
+    min-width: 11vw;
+    margin: 2px 0;
+}
