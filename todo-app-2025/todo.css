@@ -60,3 +60,8 @@
     min-width: 11vw;
     margin: 2px 0;
 }
+#no_data{
+    font-size: larger;
+    text-align: center;
+    margin-top: 50px;
+}
