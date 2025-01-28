@@ -10,7 +10,8 @@ function add(event) {
             todo_items[currentEditElementIndex]= input.value
         }
     }else{
-        todo_items.push(input.value)
+        if(input.value.trim() == "")window.alert("type some text in the input")
+        else todo_items.push(input.value)
     }
     input.value=""
     reloadTodoItems()
