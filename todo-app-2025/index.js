@@ -20,12 +20,18 @@ function add(event) {
 
 function reloadTodoItems() {
     if (todo_items.length == 0) {
+
+       let no_data_present = document.body?.contains(document?.getElementById("no_data"));
+
         let no_data = document.createElement("p")
         no_data.textContent = "No Todo Items Are Available...."
         no_data.id = "no_data"
-        document.getElementById("todo_container")?.appendChild(no_data)
-        
-    } else { document.getElementById("no_data").style.display = 'none' }
+        if(!no_data_present)document.getElementById("todo_container")?.appendChild(no_data)
+
+    } else {
+        document.getElementById("no_data")?.remove();
+
+    }
 
     let list_item_container = document.getElementById("list_item_container")
     list_item_container.innerHTML = "";
